@@ -497,7 +497,8 @@ export default class ModalBox extends React.PureComponent {
             ]
           }
         ]}
-        {...this.state.pan.panHandlers}>
+        {...this.state.pan.panHandlers}
+        pointerEvents={"box-none"}>
         {this.props.children}
       </Animated.View>
     );
